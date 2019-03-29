@@ -1,6 +1,5 @@
 
-
-angular.module('todoApp', [])
+angular.module('DailyPlannerApp', [])
   .controller('TodoListController', function() {
     var todoList = this;
     todoList.todos = [
