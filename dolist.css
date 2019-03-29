@@ -18,10 +18,12 @@ html body {
 
 .do {
     font-size: 17px;
+    border-radius: 4%;
 }
 
 .black {
     color: black;
+    border-radius: 4%;
 }
 
 .btn-primary {
@@ -34,4 +36,5 @@ html body {
     text-align: center;
     margin-top: 45px;
     font-size: 25px;
+    border-radius: 4%;
 }

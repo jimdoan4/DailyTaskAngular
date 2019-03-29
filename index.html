@@ -12,24 +12,26 @@
 
     <body class="container">
         <h2 class="centered">Daily Planner</h2>
-        <div ng-controller="TodoListController as todoList">
+        <div ng-controller="DailyPlannerController as dailyPlanner">
             <table class="table table-striped">
                 <thead class="tasks">
                     <tr>
-                        <th scope="col">{{todoList.remaining()}} Daily {{todoList.dolists.length}} Tasks I Have To Do
+                        <th scope="col">{{dailyPlanner.remaining()}} Daily {{dailyPlanner.dolists.length}} Tasks I Have
+                            To Do
                             Today:
                         </th>
                     </tr>
                 </thead>
                 <tbody class="black">
-                    <tr ng-repeat="todo in todoList.todos" class="black">
+                    <tr ng-repeat="todo in dailyPlanner.todos" class="black">
                         <th class="black do" scope="row" class="done-{{todo.done}}">
                             {{todo.text}}</th>
                     </tr>
                 </tbody>
             </table>
-            <form ng-submit="todoList.addTodo()" class="forms">
-                <input type="text" ng-model="todoList.todoText" size="30" placeholder="Add tasks here">
+            <form ng-submit="dailyPlanner.addTodo()" class="forms">
+                <input class='black' type="text" ng-model="dailyPlanner.todoText" size="30"
+                    placeholder="Add tasks here">
                 <input class="btn-primary" type="submit" value="add">
             </form>
         </div>

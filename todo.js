@@ -1,28 +1,32 @@
 
 angular.module('DailyPlannerApp', [])
-  .controller('TodoListController', function() {
-    var todoList = this;
-    todoList.todos = [
-      {text:'Finish Homework', done:true}];
- 
-    todoList.addTodo = function() {
-      todoList.todos.push({text:todoList.todoText, done:false});
-      todoList.todoText = '';
+  .controller('DailyPlannerController', function() {
+    var dailyPlanner = this;
+    dailyPlanner.todos = [
+      {text:'Finish Homework', done:true},
+     {text:'Wash Dishes', done:true},
+      {text:'Schedule Appointment with Dr. Henderson', done:true}
+    ];
+      
+     
+    dailyPlanner.addTodo = function() {
+      dailyPlanner.todos.push({text:dailyPlanner.todoText, done:false});
+      dailyPlanner.todoText = '';
     };
  
-    todoList.remaining = function() {
+    dailyPlanner.remaining = function() {
       var count = 0;
-      angular.forEach(todoList.todos, function(todo) {
+      angular.forEach(dailyPlanner.todos, function(todo) {
         count += todo.done ? 1 : 1;
       });
       return count;
     };
  
-    todoList.archive = function() {
-      var oldTodos = todoList.todos;
-      todoList.todos = [];
+    dailyPlanner.archive = function() {
+      var oldTodos = dailyPlanner.todos;
+     dailyPlanner.todos = [];
       angular.forEach(oldTodos, function(todo) {
-        if (!todo.done) todoList.todos.push(todo);
+        if (!todo.done) dailyPlanner.todos.push(todo);
       });
     };
   });
