@@ -2,15 +2,14 @@ html body {
     background-color: #c0cad8;
 }
 
-.done-true {
-    text-decoration: line-through;
-    color: grey;
-}
 
 .centered {
     text-align: center;
     margin-top: 75px;
-    font-size: 45px;
+    font-size: 56px;
+    font-family: 'Permanent Marker',
+        cursive;
+    margin-bottom: 42px;
 }
 
 .tasks {
