@@ -35,7 +35,7 @@ ____
 ___
 
 * View our quick demonstration at the heroku link below
-[Heroku]()
+[Github IO](https://jimdoan4.github.io/DailyTaskAngular.github.io/)
 
 ## Features
 ___
