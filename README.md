@@ -31,7 +31,7 @@ ____
 
 * An interviewee might be asked what type of backend is most popularly used with the Angular framework, to test their competence on setting up an environment to complete an Angular application. They may also be asked about angular components, such as about the heroes component. . Lastly, the interviewee may be asked about Angular routing.
 
-## Instructions to View (Live Deployment on Heroku)
+## Instructions to View (Live Deployment on Github IO)
 ___
 
 * View our quick demonstration at the Github link below
