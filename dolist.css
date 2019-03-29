@@ -2,3 +2,8 @@
     text-decoration: line-through;
     color: grey;
 }
+
+.centered {
+    text-align: center;
+    margin-top: 75px;
+}
