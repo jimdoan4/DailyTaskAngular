@@ -34,8 +34,8 @@ ____
 ## Instructions to View (Live Deployment on Heroku)
 ___
 
-* View our quick demonstration at the heroku link below
-[Github IO](https://jimdoan4.github.io/DailyTaskAngular.github.io/)
+* View our quick demonstration at the Github link below
+[Daily Task Angular](https://jimdoan4.github.io/DailyTaskAngular.github.io/)
 
 ## Features
 ___
