@@ -51,5 +51,3 @@ ___
 * Each task that’s added to the daily planner will add to a small calendar that will be implemented on the page.
 Message Input
 
-
-Message Tray Fleary-WDI20
