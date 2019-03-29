@@ -6,4 +6,29 @@
 .centered {
     text-align: center;
     margin-top: 75px;
+    font-size: 45px;
+}
+
+.tasks {
+    font-size: 26px;
+}
+
+.do {
+    font-size: 17px;
+}
+
+.black {
+    color: black;
+}
+
+.btn-primary {
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4%;
+}
+
+.forms {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 25px;
 }

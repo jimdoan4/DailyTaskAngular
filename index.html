@@ -13,23 +13,21 @@
         <h2 class="centered">Daily Planner</h2>
         <div ng-controller="TodoListController as todoList">
             <table class="table table-striped">
-                <thead>
+                <thead class="tasks">
                     <tr>
                         <th scope="col">{{todoList.remaining()}} daily {{todoList.dolists.length}} tasks to do today:
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr ng-repeat="todo in todoList.todos">
-                        <th scope="row" class="done-{{todo.done}}">{{todo.text}}</th>
-                        <!-- <td class="done-{{todo.done}}">
-                            {{todo.text}}
-                        </td> -->
+                <tbody class="black">
+                    <tr ng-repeat="todo in todoList.todos" class="black">
+                        <th class="black do" scope="row" class="done-{{todo.done}}">
+                            {{todo.text}}</th>
                     </tr>
                 </tbody>
             </table>
-            <form ng-submit="todoList.addTodo()">
-                <input type="text" ng-model="todoList.todoText" size="30" placeholder="add new todo here">
+            <form ng-submit="todoList.addTodo()" class="forms">
+                <input type="text" ng-model="todoList.todoText" size="30" placeholder="Add tasks here">
                 <input class="btn-primary" type="submit" value="add">
             </form>
         </div>

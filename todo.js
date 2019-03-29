@@ -4,7 +4,7 @@ angular.module('todoApp', [])
   .controller('TodoListController', function() {
     var todoList = this;
     todoList.todos = [
-      {text:'facebook', done:true}];
+      {text:'Finish Homework', done:true}];
  
     todoList.addTodo = function() {
       todoList.todos.push({text:todoList.todoText, done:false});
@@ -14,7 +14,7 @@ angular.module('todoApp', [])
     todoList.remaining = function() {
       var count = 0;
       angular.forEach(todoList.todos, function(todo) {
-        count += todo.done ? 0 : 1;
+        count += todo.done ? 1 : 1;
       });
       return count;
     };
